@@ -13,4 +13,11 @@ $(document).ready(function(){
     $('.top_menu_close').click(function(){
         $('.top_menu_on_wrap').hide();
     })
+
+    $('.top_menu_on_nav ul li').click(function(){
+        $('.top_menu_on_nav ul li').removeClass('on')
+        $('.top_menu_on_nav ul li ul').hide()
+        $(this).addClass('on')
+        $(this).children().show()
+    })
 })
